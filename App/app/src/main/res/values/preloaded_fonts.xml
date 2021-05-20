@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/architects_daughter</item>
+        <item>@font/belgrano</item>
+        <item>@font/jim_nightshade</item>
+        <item>@font/lemonada</item>
+        <item>@font/lemonada_bold</item>
+        <item>@font/lemonada_light</item>
+        <item>@font/lemonada_semibold</item>
+        <item>@font/order_font</item>
+    </array>
+</resources>

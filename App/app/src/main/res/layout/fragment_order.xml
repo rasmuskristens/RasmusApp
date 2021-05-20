@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="473dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-90dp"
+        tools:context=".UI.Fragments.OrderFragment">
+
+
+        <ImageView
+            android:id="@+id/background"
+            android:layout_width="416dp"
+            android:layout_height="436dp"
+            android:layout_marginBottom="48dp"
+            android:cropToPadding="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/receiptimage" />
+
+        <TextView
+            android:id="@+id/drink_name"
+            android:layout_width="89dp"
+            android:layout_height="21dp"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="150dp"
+            android:fontFamily="@font/order_font"
+            android:text=""
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/background" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="48dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/order_font"
+            android:text=""
+            app:layout_constraintStart_toEndOf="@+id/drink_name"
+            app:layout_constraintTop_toTopOf="@+id/drink_name" />
+
+        <TextView
+            android:id="@+id/drink_name2"
+            android:layout_width="89dp"
+            android:layout_height="21dp"
+            android:fontFamily="@font/order_font"
+            android:text=""
+            app:layout_constraintStart_toStartOf="@+id/drink_name"
+            app:layout_constraintTop_toBottomOf="@id/drink_name" />
+
+        <TextView
+            android:id="@+id/price2"
+            android:layout_width="48dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/order_font"
+            android:text=""
+            app:layout_constraintStart_toEndOf="@+id/drink_name2"
+            app:layout_constraintTop_toBottomOf="@+id/drink_name" />
+
+        <TextView
+            android:id="@+id/drink_name3"
+            android:layout_width="89dp"
+            android:layout_height="21dp"
+            android:fontFamily="@font/order_font"
+            android:text=""
+            app:layout_constraintStart_toStartOf="@+id/drink_name2"
+            app:layout_constraintTop_toBottomOf="@id/drink_name2" />
+
+        <TextView
+            android:id="@+id/price3"
+            android:layout_width="48dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/order_font"
+            android:text=""
+            app:layout_constraintStart_toEndOf="@+id/drink_name3"
+            app:layout_constraintTop_toBottomOf="@+id/drink_name2" />
+
+        <Button
+            android:id="@+id/sendDrink"
+            android:layout_width="81dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="216dp"
+            android:layout_marginTop="105dp"
+            android:backgroundTint="@color/purple_700"
+            android:fontFamily="@font/belgrano"
+            android:text="order"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/price3" />
+
+        <TextView
+            android:id="@+id/total_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="230dp"
+            android:fontFamily="@font/order_font"
+            app:layout_constraintBottom_toTopOf="@+id/sendDrink"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="2dp"
+            android:backgroundTint="@color/red"
+            app:layout_constraintEnd_toStartOf="@+id/drink_name"
+            app:layout_constraintTop_toTopOf="@+id/drink_name" />
+
+        <Button
+            android:id="@+id/delete2"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="2dp"
+            android:backgroundTint="@color/red"
+            app:layout_constraintEnd_toStartOf="@+id/drink_name2"
+            app:layout_constraintTop_toBottomOf="@+id/drink_name" />
+
+        <Button
+            android:id="@+id/delete3"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="2dp"
+            android:backgroundTint="@color/red"
+            app:layout_constraintEnd_toStartOf="@+id/drink_name3"
+            app:layout_constraintTop_toBottomOf="@+id/drink_name2" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+
+        android:layout_width="match_parent"
+        android:layout_height="220dp">
+
+
+        <ImageView
+            android:id="@+id/app_bar_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="TODO"
+
+            android:scaleType="centerCrop"
+
+
+            android:src="@drawable/f9426eb767734e6db4c576dc9557176b"
+
+            app:layout_collapseMode="parallax" />
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+</RelativeLayout>

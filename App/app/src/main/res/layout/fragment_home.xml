@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/wallpaper_main"
+    tools:context=".UI.Fragments.HomeFragment">
+
+
+    <TextView
+        android:id="@+id/favorite_text"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:fontFamily="@font/lemonada_bold"
+        android:letterSpacing="0"
+        android:paddingTop="0dp"
+        android:text="Favorites"
+        android:textAlignment="center"
+        android:textColor="@color/red"
+        android:textSize="45dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_fave"
+        android:layout_width="match_parent"
+        android:layout_height="470dp"
+        android:layout_below="@+id/favorite_text"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        tools:layout_editor_absoluteX="203dp"
+        tools:layout_editor_absoluteY="335dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="208dp"
+        android:layout_height="174dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="13dp"
+        android:clickable="true"
+
+        android:focusable="true"
+        android:src="@drawable/fab_image_foreground"
+        app:backgroundTint="@color/purple_500" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/deleteFAB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/floatingActionButton"
+        android:layout_alignEnd="@+id/floatingActionButton"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="16dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/ic_baseline_delete_24"
+        android:visibility="invisible" />
+
+</RelativeLayout>

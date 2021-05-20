@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Drinks and Dreams</string>
+    <string name="title_activity_buttom_navigation">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="nav_open">1</string>
+    <string name="nav_close">1</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="about_us_text">When it comes to </string>
+    <string name="about_us">Welcome to Drinks and Dreams, your number one source for quick drinks at your favorite restaurant. We are a family driven business with core values. We are dedicated to giving you the very best of service, with a focus on quality, speed and security
+Founded in 2021 by Rasmus, Drinks and Dreams has come a long way from its beginnings in a a small basement in Aarhus. When Rasmus first started out, his passion for a more efficient restaurant service drove him to quit his day job,
+        and gave him the impetus to turn hard work and inspiration into to a booming online store. We now serve customers all over world, and are thrilled to be a part of the efficient wing of the app industry. </string>
+
+
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
